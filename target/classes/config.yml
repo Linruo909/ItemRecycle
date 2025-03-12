@@ -1,0 +1,53 @@
+# 菜单按键和底框样式
+# displayName:显示的名字  type:物品样式  amount:显示数量  exID:附加值ID
+menuItem:
+  # 确认按钮样式
+  Confirm:
+    displayName: "§a确认回收"
+    type: APPLE
+    amount: 1
+    exID: 0
+    total: "§6总价值:§e "
+  # 填充按钮样式
+  Fill:
+    displayName: "§f分界线"
+    type: STAINED_GLASS_PANE
+    amount: 1
+    exID: 0
+  # 切页按钮样式
+  ChangePage:
+    displayName: "§f下一页"
+    type: STAINED_GLASS_PANE
+    amount: 1
+    exID: 2
+  #  刷新总价值
+  Refresh:
+    displayName: "§e刷新总价值"
+    type: STAINED_GLASS_PANE
+    amount: 1
+    exID: 4
+
+  # 标题显示 可用：%player%
+  title: "§c回收系统"
+  Coll:
+    show: "展示部分"
+# 信息文本配置
+Message:
+  setValue: "§a物品价值已设置为§e %value% §a!"
+  unsigned: "§a该物品暂时不存在价值，无法抹除其价值=P"
+  remove: "§a该物品现已无法进行回收~"
+  cannotrecycle: "§b该物品未被赋予价值，无法进行回收！"
+  recycle: "§a您通过回收物品已获得 "
+  coin: "§e 世初币"
+  playerOnly: "§c该指令仅玩家可用！"
+  error: "§c参数有误，请输入§e/ir help§c查看帮助"
+  unknownCommand: "§c未知指令，§a请输入/ir help查看帮助"
+  help: "§6=========[§bItemRecycle§6]§a 帮助页面 §6=========\n §6/ir§a open <可选:player>§6- §a打开回收页面\n §6/ir§a show <可选:player>§6- §a打开回收价格展示页面\n §6/ir§a set [Value] §6- §a设置手中物品的回收价格\n §6/ir§a See§6 - §a查看手中物品的回收价格\n §6/ir§a remove§6 - §a移除手中物品的价值，使其无法回收\n §6/ir§a reload §6- §a重载插件配置"
+  reload: "§a插件配置重载成功。"
+
+# 物品价值配置,可用指令自动生成此配置。
+# 格式： itemType: Value  .
+# 需要前置插件Vault.
+item_values:
+  APPLE: 1.0
+  GOLD_INGOT: 10.0

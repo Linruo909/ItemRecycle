@@ -1,0 +1,21 @@
+name: ItemRecycle
+version: '1.0-SNAPSHOT'
+main: com.linruo.ItemRecycle
+commands:
+  itemrecycle:
+    description: " "
+    aliases: ir
+    permission: itemrecycle.use
+
+#  reload:
+#    description: " "
+#    usage: ""
+#    permission: itemrecycle.reload
+#
+permissions:
+  itemrectcle.use:
+    description: 使用权限
+    default: op
+
+
+
